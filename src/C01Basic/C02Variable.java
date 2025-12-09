@@ -9,12 +9,13 @@ public class C02Variable {
     //변수의 명명 규칙
 //    변수명에 의미의 분절이 일어나는 경우에는 camelcase 또는 _ 사용
     public static void main(String[] args) throws IOException {
-        System.out.println(cc());
+
         /*String my_First_name = "hongildong";
         String my_second_name = "hongildong";*/
 
     }
-
+}
+/*
 //기본형 변수 : byte(1byte), int(4byte), long(8byte), bool, null
 //            byte= -128 ~ 127까지
 //자료형이 표현할 수 있는 범위를 넘어선 경우 오버플로우/언더플로우 발생
@@ -101,3 +102,22 @@ int i2 = c1;
 
 //문제) 알파벳 소문자 개수 세기
 
+*/
+/*
+String st1 = "01abcd123한글AZ123";
+int count = 0;
+        for(int i=0; i<st1.length(); i++) {
+char cha = st1.charAt(i);
+            if(cha >= 'a' && cha <='z' || cha >= 'A' && cha <= 'Z') {
+count++;
+        } else {
+        continue;
+        }
+        }
+        System.out.print(count);
+        */
+
+//변수와 상수
+// 변수 : 재할당 가능 , 재선언은 불가능
+//상수 : 값의 재할당 불가능 , 정해진 값(고정된값)을 사용시 상수 활용.
+//

@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 public class C01InputOutput {
     public static void main(String[] args) throws IOException {
         //출력 : System.out을 통해 콘솔 출력
-       // System.out.println(20);
+        // System.out.println(20);
         //println은 줄바꿈 있는 출력
         // 2. 입 출력은 모두 문자열로 진행
         //print는 줄바꿈이 없는 출력
@@ -22,7 +22,7 @@ public class C01InputOutput {
 //        System.out.println();
 //        System.out.print("사용자 입력사항 "  + input);
 
-        //입력 2 : BufferReader 버퍼를  활용하여 더 좋은 성늘 
+        //입력 2 : BufferReader 버퍼를  활용하여 더 좋은 성늘
         //3. 바이트대신 문자단위로 출력
         //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         //아래와 같이 입력값이 주어졌을 때 처리 방법
@@ -39,7 +39,7 @@ public class C01InputOutput {
 //         int input2 = sc.nextInt();
 
 
-         //입력값 : asd  asd  asd as dasd
+        //입력값 : asd  asd  asd as dasd
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //
 //        String as = br.readLine();
@@ -57,7 +57,7 @@ public class C01InputOutput {
         String a = st.nextToken();
         String b = st.nextToken();
         String c = st.nextToken();
-        System.out.println(a +" "+ b+ " " + c);
+        System.out.println(a + " " + b + " " + c);
         br.close();
 
     }
