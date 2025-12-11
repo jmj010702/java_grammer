@@ -47,7 +47,7 @@ public class C07ReferenceType {
 //            int i1 = 10;
 //            Integer i2 = 10;
 ////            wrapper 클래스의 주요 메서드 사용 예시
-//            String st1 = Integer.toString(i1);
+//            String st1 = Integer.toString(i1); //문자열로 타입 변환
 //            int i3 = Integer.parseInt(st1);
 //
 //
@@ -66,8 +66,6 @@ public class C07ReferenceType {
 //            Integer i2 = i;
 ////        오토 언박싱 : wrapper 클래스 -> 원시 자동 형변환
 //            int i3 = i2;
-
-
 
     }
 }

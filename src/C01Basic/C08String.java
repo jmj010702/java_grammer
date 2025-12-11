@@ -9,7 +9,7 @@ public class C08String {
 //        객체 선언 방식
 //        String st1 = new String("test");
 //        String st2 = new String("test");
-////        리터럴방식  : String pool을 사용하는 방식(자바에서 추천)
+//        리터럴방식  : String pool을 사용하는 방식(자바에서 추천)
 //        String st3 = "hello";
 //        String st4 = "hello";
 
@@ -29,8 +29,8 @@ public class C08String {
 //        System.out.println(c1);
 //        int count = 0;
 //        for(int i =0; i<st1.length(); i++) {
-////            String st2 = String.valueOf(st1.charAt(i));
-////            if(st2.equals("a")) {
+//            String st2 = String.valueOf(st1.charAt(i));
+//            if(st2.equals("a")) {
 //              if(st1.charAt(i) == 'a')
 //                count ++;
 //
@@ -85,10 +85,10 @@ public class C08String {
 
 //        replaceAll(a,b) : replace와 사용법 동일, 정규표현식 쓸 수 있는 점이 차이점
 //        String  st1 = "01abC    1234한글123";
-////        한글제거 [가-힣]
+//        한글제거 [가-힣]
 //        String answer1 = st1.replaceAll("[]가-힣]","");
 //        System.out.println(answer1);
-////      영어 소문자 제거 [a-z] , 대문자 [A-Z]
+//       영어 소문자 제거 [a-z] , 대문자 [A-Z]
 //        String answer2 = st1.replaceAll("[a-z]","");
 //        System.out.println(answer2);
 ////      영어 제거  [A-Za-z]
