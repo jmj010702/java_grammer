@@ -47,21 +47,21 @@ public class C06LoopstatementAdvance {
 //        소수인지 여부 판별  소수란 1과 자신을 제외한 숫자로 나누어지지 않는 수 (1보더 큰수)
 //        for문을  n번 돌리는게 아닌 아래처럼 i의 제곱만큼만 비교해야 시간초과가 안남
 //        i<= Math.sqrt(n)  ==  i*i<=n;
-//        int n = Integer.parseInt(br.readLine());
-//        boolean tf = true;
-//        for(int i =2; i*i<=n; i++) {
-//            if(n%i == 0) {
-//                tf = false;
-//                break;
-//            } else {
-//                tf = true;
-//            }
-//        }
-//        if(tf && n!=1) {
-//            System.out.print("소수 ");
-//        } else {
-//            System.out.print("소수아님 ");
-//        }
+        int n = Integer.parseInt(br.readLine());
+        boolean tf = true;
+        for(int i =2; i*i<=n; i++) {
+            if(n%i == 0) {
+                tf = false;
+                break;
+            } else {
+                tf = true;
+            }
+        }
+        if(tf && n!=1) {
+            System.out.print("소수 ");
+        } else {
+            System.out.print("소수아님 ");
+        }
 
 
 //        향상된 for문을 통한 배열 접근 방식
