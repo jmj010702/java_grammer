@@ -180,7 +180,19 @@ public class test {
 
 //      백준 : 파일정리
 
-
+//        iterator를 활용한 출력
+//        Map<String, Integer> myMap=new HashMap<>();
+//        myMap.put("야구", 2);
+//        myMap.put("축구", 3);
+//        myMap.put("농구", 2);
+//        Iterator<String> iters=myMap.keySet().iterator();
+//       next메서드는 데이터를 하나씩 소모시키면서 값을 반환
+//       System.out.println(iters.next());
+//       hasNext메서드는 iterator안에 그 다음값이 있는지 없는지 boolean 리턴
+//       System.out.println(iters.hasNext());
+//        while(iters.hasNext()) {
+//            System.out.println(iters.next());
+//        }
 
 
 
