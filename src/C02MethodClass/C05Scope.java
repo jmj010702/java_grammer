@@ -1,7 +1,7 @@
 package C02MethodClass;
 
 import java.io.IOException;
-
+/*
 //변수의 유효 범위 : 클래스 변수와 객체 변수는 클래스 전역에서 사용 가능
 public class C05Scope {
 //    둘다 클래스 전역에서 사용가능하지만 객체변수는 클래스 객체와 타입이 달라서 사용 안됨
@@ -36,3 +36,4 @@ person.setName("lee");
         System.out.println(person.returnPersonImfo()); // lee
     }
 }
+*/
