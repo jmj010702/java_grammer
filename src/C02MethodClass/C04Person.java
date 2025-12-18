@@ -1,7 +1,7 @@
 package C02MethodClass;
 
 import java.io.IOException;
-
+/*
 public class C04Person  {
 //    객체변수는 일반적으로 변수의 안정성을 위해 private(클래스 내부에서만 접근 가능한 접근 제어자)으로 설정
        private String name;
@@ -53,3 +53,4 @@ public class C04Person  {
 
 
 
+*/

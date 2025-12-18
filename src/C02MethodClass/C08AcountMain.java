@@ -3,7 +3,7 @@ package C02MethodClass;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+/*
 public class C08AcountMain {
     public static void main(String[] args) throws IOException {
 //        계좌개설 (객체 생성 )
@@ -29,8 +29,24 @@ public class C08AcountMain {
 
         }
 
+          Map<String, Account> accountMap = new HashMap<>();
+        accountMap.put("12345", new Account("12345", "이지연", 1000000));
+        accountMap.put("54321", new Account("54321", "brad", 0));
+
+        Account a = accountMap.get("12345");
+        Account b = accountMap.get("54321");
+
+        // 추천
+        a.transfer(b, 50000);
+
+        // 비추천
+        Account.transfer(a,b,50000);
+        System.out.println(accountMap);
+
 
     }
 }
 
 //AccountClass 생성 - 계좌주명 name / 계좌번호 - accountnumber -String / 잔고 (balance) -long/
+
+ */

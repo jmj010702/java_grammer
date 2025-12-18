@@ -1,7 +1,7 @@
 package C02MethodClass;
 
 import java.io.IOException;
-
+/*
 public class C04PersonMain {
     public static void main(String[] args) throws IOException {
         /*
@@ -37,7 +37,7 @@ public class C04PersonMain {
 //        위 코드의 문제점
 //        1. person객체의 변수에 외부 클래스에 접근 가능
 //        2. person에 대한 출력 코드가 외부 클래스마다 중복되어 들어갈 여지가 있다
-*/
+
         C04Person p3 = new C04Person();
         p3.setName("hong1");
         p3.setEmail("hong1@naver.com");
@@ -68,3 +68,4 @@ public class C04PersonMain {
         System.out.println("이름은: " + person.getName() + " 이메일은 : "+ person.getEmail()+ " 나이는 : " + person.getAge() + "입니다.");
     }
 }
+*/
