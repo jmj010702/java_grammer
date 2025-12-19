@@ -46,7 +46,6 @@ public class C03ComparatorComparable {
 //      백준 최대값 힙
 
 //        백준 선긋기
-        // TODO 테스트
 
 
 
