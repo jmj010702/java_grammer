@@ -89,17 +89,17 @@ for(int i =0; i<list.size(); i ++) {
         }
     }
 
-    public static void Permu(List<Integer> list , int n, boolean[] visit, List<Integer>temp, List<List<Integer>> result) {
-        if(temp.size()==n) {
+    public static void Permu(List<Integer> list, int n, boolean[] visit, List<Integer> temp, List<List<Integer>> result) {
+        if (temp.size() == n) {
             result.add(new ArrayList<>(temp));
             return;
         }
 
-        for(int i=0; i<list.size(); i++) {
+        for(int i =0; i<list.size(); i++) {
             if(visit[i]) continue;
             temp.add(list.get(i));
-            visit[i] = true;
-            Permu(list,n,visit,temp,result);
+            visit[i] =true;
+            Permu(list,n,visit, temp, result);
             temp.remove(temp.size()-1);
             visit[i] = false;
         }

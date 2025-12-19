@@ -3,36 +3,13 @@ package C02MethodClass;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
-
+import java.util.HashMap;
+import java.util.Map;
+import java.util.StringTokenizer;
+/*
 public class Setvice {
     public static void main(String[] args) throws IOException {
-List<Author1> author1List = new ArrayList<>();
-List<Post1> post1List = new ArrayList<>();
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        long id = Long.parseLong(br.readLine());
-
-        Author1 author1 = null;
-        for(Author1 a : author1List ) {
-            if(a.getId() == id) {
-                author1 = a;
-            }
-        }
-        author1.getPost1s().size();
-
-       Long id1 =  Long.parseLong(br.readLine());
-        Post1 post1 = null;
-        for(Post1 p : post1List) {
-            if(p.getId() == id1) {
-                post1 = p;
-            }
-        }
-        post1.getAuthor1().getName();
-
-
-
-/*
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         Map<String, Setviceaccount> map = new HashMap<>();
@@ -110,11 +87,9 @@ List<Post1> post1List = new ArrayList<>();
                     System.out.println("송금이 완료되었습니다");
                 }
             }
-        }*/
+        }
     }
 }
-
- /*
     class Setviceaccount {
         private Long id;
         private static Long auto_id;
@@ -176,77 +151,6 @@ List<Post1> post1List = new ArrayList<>();
                     ", balance=" + balance +
                     '}';
         }
-    */
-
-
-class Author1 {
-private static long sta_id;
-private Long id;
-private String name;
-private String email;
-private String pw;
-private List<Post1> post1s ;
-
-    public Author1(String name, String email, String pw) {
-        sta_id++;
-        this.id = sta_id;
-        this.name = name;
-        this.email = email;
-        this.pw = pw;
-        this.post1s = new ArrayList<>();
-    }
-    public Author1() {}
-
-    public Long getId() {
-        return id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPw() {
-        return pw;
-    }
-
-    public List<Post1> getPost1s() {
-        return post1s;
-    }
-}
-class Post1 {
-    private static long sta_id;
-    private long id;
-    private String title;
-    private String contents;
-    private Author1 author1;
-
-    public Post1(String title, String contents, Author1 author1) {
-        sta_id++;
-        this.id = sta_id;
-        this.title = title;
-        this.contents = contents;
-        this.author1 = author1;
-        author1.getPost1s().add(this);
-    }
-    public Post1() {}
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getContents() {
-        return contents;
-    }
-
-    public Author1 getAuthor1() {
-        return this.author1;
-    }
-
-    public long getId() {
-        return id;
-    }
-}
+*/
