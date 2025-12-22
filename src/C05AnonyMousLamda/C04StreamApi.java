@@ -187,7 +187,7 @@ Optional<student> s2;
         }
         System.out.println(s2.orElseThrow(() -> new NoSuchElementException("없는 회원입니다.")));
 
-
+//test
 
     }
 }
