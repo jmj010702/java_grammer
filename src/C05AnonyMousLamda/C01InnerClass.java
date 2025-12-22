@@ -12,6 +12,7 @@ public class C01InnerClass {
     }
 }
 
+
 class Member{
     private int a;
 
@@ -24,6 +25,7 @@ class Member{
     }
 
 //    static 내부 클래스 : Member에 static변수처럼 활용
+//    실전에서는 별로 안쓰임
     static class MemberInner {
         private int b;
 
