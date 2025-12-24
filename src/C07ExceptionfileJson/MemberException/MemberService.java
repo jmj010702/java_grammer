@@ -1,5 +1,6 @@
 package C07ExceptionfileJson.MemberException;
-/*
+
+import java.util.NoSuchElementException;/*
 
 import java.util.List;
 import java.util.Optional;
@@ -22,22 +23,23 @@ public class MemberService {
         memberRepository.register(newMember);
     }
 
-    public Member findById(long id) {
+//  메서드 상단부에 예외를 넣어주는게 관례
+    public Member findById(long id)throws NoSuchElementException {
         //            예외 발생
-        return memberRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("id가 없습니다."));
+        return memberRepository.findById(id).orElseThrow(() -> new NoSuchElementException("id가 없습니다."));
     }
 
     public List<Member> findAll() {
         return memberRepository.findAll();
     }
 
-    public void login(String email, String password) {
+    public void login(String email, String password) throws NoSuchElementException, IllegalArgumentException {
 //        email이 있는지 확인 후 없으면 예외발생
-        Member member = memberRepository.findByEmail(email).orElseThrow(() -> new IllegalArgumentException("이메일이 없습니다"));
+        Member member = memberRepository.findByEmail(email).orElseThrow(() -> new NoSuchElementException("이메일이 없습니다"));
 //        password가 일치한지 확인 후 일치하지 않으면 예외 발생
         if (!member.getPw().equals(password)) {
             throw new IllegalArgumentException("비밀번호가 맞지 않습니다. ");
         }
     }
 }
- */
+*/

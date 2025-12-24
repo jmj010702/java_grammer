@@ -4,6 +4,7 @@ package C07ExceptionfileJson.MemberException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
+import java.util.NoSuchElementException;
 
 //사용자와 인터페이싱(입출력)하는 계층
 public class MemberController {
@@ -28,6 +29,7 @@ public class MemberController {
                 } catch (IllegalArgumentException e) {
                     System.out.println("잘못된 인자가 들어왔습니다 " + e.getMessage());
                     e.printStackTrace();
+                    return;
                 }
             } else if (input.equals("2")) {
                 System.out.println("회원상세조회 서비스입니다.");
@@ -53,15 +55,29 @@ public class MemberController {
                 System.out.println("비밀번호를 입력해주세요");
                 String password = sc.nextLine();
 //                예외처리 : 예외발생시, 예외의 원인 출력.
-                try {
+
+
+try {
                     memberService.login(email, password);
                     System.out.println("로그인 성공입니다.");
                 } catch (IllegalArgumentException e) {
                     System.out.println(e.getMessage());
                     e.printStackTrace();
-                }
+                } catch (NoSuchElementException e) {
+        System.out.println(e.getMessage());
+        e.printStackTrace();
+
             }
         }
     }
+static boolean register(String email, String pw) {
+    boolean check =false;
+    if(pw.length() >=10) {
+        check = true;
+    }  else {
+    throw new iLLegalArgyument("비밀번호가 너무 짧습니다");
+    }
+    System.out.println("회원가입이 되었습니다,");
+    return check;
 }
- */
+    */

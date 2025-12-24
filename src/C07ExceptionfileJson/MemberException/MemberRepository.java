@@ -38,6 +38,10 @@ public class MemberRepository {
 //
 
     public Optional<Member> findByEmail(String email) {
+      return  this.memberlist.stream().filter(a -> a.getEmail().equals(email)).findFirst();
+    }
+
+    public Optional<Member> findByEmail(String email) {
         for (Member m : memberList) {
             if (m.getEmail().equals(email)) {
                 return Optional.of(m);

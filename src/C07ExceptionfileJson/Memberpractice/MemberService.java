@@ -1,6 +1,7 @@
 package C07ExceptionfileJson.Memberpractice;
 
 import java.lang.reflect.Member;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
@@ -21,8 +22,12 @@ public class MemberService {
         memberRepository.register(newmember);
     }
 //    ID를 찾는 메서드
-    public Member findById(long id)  {
+    public MemberEntity findById(long id)  {
 return memberRepository.findById(id).orElseThrow( () -> new NoSuchElementException("ID가 없습니다"));
+    }
+
+    public MemberEntity findByEmail(String email) {
+        return memberRepository.findByEmail(email).orElseThrow( () -> new NoSuchElementException(" email이 없습니다"));
     }
 
 //    findAll 메서드
@@ -32,4 +37,10 @@ return memberRepository.findById(id).orElseThrow( () -> new NoSuchElementExcepti
     }
 
 //    login 메서드 email이 있는지 확인후 에외발생 / 비밀번호도 확인
+    public void login(String email, String pw) {
+MemberEntity member = memberRepository.findByEmail(email).orElseThrow( () -> new NoSuchElementException("email이 없습니다"));
+    if(!member.getPw().equals(pw)) {
+        throw new IllegalArgumentException("비밀번호가 맞지 않습니다");
+    }
+    }
 }

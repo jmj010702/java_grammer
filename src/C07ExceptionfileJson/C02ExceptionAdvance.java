@@ -6,7 +6,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class C02ExceptionAdvance {
+
+class C02ExceptionAdvance {
     public static void main(String[] args) {
 
 //      의도된 예외 강제 발생 : 특정 시점에 프로그램을 강제 중지시키기 위한 목적
@@ -43,8 +44,9 @@ e.printStackTrace();
 //        try {
 //            String text = fileread("src/C07ExceptionfileJson/test.txt");
 //            System.out.println(text);
-//        } catch (RuntimeException e) {
+//        } catch (IOException e) {
 ////            사용자에게 메시지 전달
+//throw new RuntimeException( " assad");
 //            System.out.println("파일처리 과정에서 에러가 발생 ");
 //            e.printStackTrace();
 //        }
